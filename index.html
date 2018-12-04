@@ -1,0 +1,67 @@
+<!--
+   Name: Mohammad Taaha
+   91.61 Assignment:  Using the jQuery UI Slider and Tab Widgets
+   Mohammad Taaha, UMass Lowell Computer Science Student,mohammad_taaha@student.uml.edu
+   Copyright (c) 2018 by Mohammad Taaha.  All rights reserved.  May be
+   freely copied or excerpted for educational purposes with credit to the
+   author.
+   Created on 12/04/2018
+   Description:This webpage will ask the user to enter th einput to create
+   a multiplication table. It will then create that table in a new tab. The user will
+   be able to select the values of the multiplication table using a slider. In this
+   assignment a slider and tabs were implemented. When the slider is moved, it adjusts
+   the value in the text box.
+      -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div id = "tabs-1">
+         <ul>
+            <li><a href = "#tabs-2">Table Calculator</a></li>
+         </ul>
+         <div id = "tabs-2">
+            <div class = "container">
+               <div class="page-header">
+                  <h1>
+                     Multiplication table
+                  </h1>
+               </div>
+               <div class= "jumbotron">
+                  <form id="register-form">
+                     <div>
+                        First Horizontal Axis: <input type="number" id = "fh_axis" name="fh_axis"><br>
+                     </div>
+                     <div id = "slider_1"></div>
+                     <div>
+                        Second Horizontal Axis: <input type="number" id = "sh_axis" name="sh_axis"><br><br>
+                     </div>
+                     <div id = "slider_2"></div>
+                     <div>
+                        First Vertical Axis: <input type="number" id = "fv_axis" name="fv_axis"><br><br>
+                     </div>
+                     <div id = "slider_3"></div>
+                     <div>
+                        Second Vertical Axis: <input type="number" id = "sv_axis" name="sv_axis"><br><br>
+                     </div>
+                     <div id = "slider_4"></div>
+                  </form>
+                  <p2 id = "table">
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/jquery.validate.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/additional-methods.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src="js/jQuery.js"></script>
+      <script src="js/multiplication.js"></script>
+   </body>
+</html>
